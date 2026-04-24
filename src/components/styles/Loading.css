@@ -3,7 +3,7 @@
   width: 100vw;
   height: var(--vh);
   /* background-image: linear-gradient(#cbb1ff, #d8c4ff); */
-  background-color: #e0f2f1;
+  background-color: #0c1929;
   z-index: 999999999;
   display: flex;
   place-items: center;
@@ -13,7 +13,7 @@
 .loading-button {
   padding: 20px 50px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: #0a1e3d;
   overflow: hidden;
   font-size: 18px;
   font-weight: 500;
@@ -52,11 +52,12 @@
   min-width: 0px;
   min-height: 0px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: #0a1e3d;
   overflow: hidden;
   transition: 0.8s ease-in-out;
   transition-delay: 0.2s;
-  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 30px 0px rgba(79, 143, 247, 0.3), 0px 15px 15px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(79, 143, 247, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +78,7 @@
 }
 
 .loading-hover {
-  background-color: #2dd4bf;
+  background-color: #3b82f6;
   width: 250px;
   height: 120px;
   position: absolute;
@@ -101,7 +102,7 @@
 
 .loading-content {
   position: relative;
-  background-color: #000;
+  background-color: #0a1e3d;
   width: 100%;
   overflow: hidden;
   transition: 0.6s;
@@ -210,7 +211,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  color: var(--backgroundColor);
+  color: #e2e8f0;
 }
 
 .loader-title {
@@ -288,7 +289,7 @@
   position: relative;
   width: 10px;
   height: 60px;
-  background-color: #000;
+  background-color: rgba(79, 143, 247, 0.3);
   display: block;
 }
 
@@ -304,7 +305,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #2dd4bf;
+  background-color: #4f8ff7;
   animation: ball25 7s infinite;
   transform: translateY(10px);
   animation-timing-function: cubic-bezier(0.3, 1.18, 0.63, 1.28);
@@ -316,7 +317,7 @@
   left: 0;
   width: 100%;
   transform: translateY(-50%);
-  color: var(--backgroundColor);
+  color: rgba(79, 143, 247, 0.08);
   font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
@@ -331,7 +332,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-color: var(--backgroundColor);
+  background-color: rgba(79, 143, 247, 0.08);
   position: absolute;
   top: 50%;
   border-radius: 50px;

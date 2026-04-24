@@ -8,7 +8,7 @@ export function setCharTimeline(
   let intensity: number = 0;
   setInterval(() => {
     intensity = Math.random();
-  }, 200);
+  }, 500);
   const tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".landing-section",
@@ -86,9 +86,9 @@ export function setCharTimeline(
           0
         )
         .to(character.rotation, { y: 0.92, x: 0.12, delay: 3, duration: 3 }, 0)
-        .to(neckBone!.rotation, { x: 0.6, delay: 2, duration: 3 }, 0)
-        .to(monitor.material, { opacity: 1, duration: 0.8, delay: 3.2 }, 0)
-        .to(screenLight.material, { opacity: 1, duration: 0.8, delay: 4.5 }, 0)
+        .to(neckBone?.rotation, { x: 0.6, delay: 2, duration: 3 }, 0)
+        .to(monitor?.material, { opacity: 1, duration: 0.8, delay: 3.2 }, 0)
+        .to(screenLight?.material, { opacity: 1, duration: 0.8, delay: 4.5 }, 0)
         .fromTo(
           ".what-box-in",
           { display: "none" },
@@ -96,7 +96,7 @@ export function setCharTimeline(
           0
         )
         .fromTo(
-          monitor.position,
+          monitor?.position,
           { y: -10, z: 2 },
           { y: 0, z: 0, delay: 1.5, duration: 3 },
           0

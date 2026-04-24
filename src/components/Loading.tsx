@@ -10,7 +10,10 @@ const Loading = ({ percent }: { percent: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
 
+  console.log("Loading component render, percent:", percent, "isLoaded:", isLoaded);
+
   if (percent >= 100) {
+    console.log("percent >= 100, triggering unload");
     setTimeout(() => {
       setLoaded(true);
       setTimeout(() => {
@@ -20,6 +23,7 @@ const Loading = ({ percent }: { percent: number }) => {
   }
 
   useEffect(() => {
+    console.log("useEffect triggered, isLoaded:", isLoaded);
     import("./utils/initialFX").then((module) => {
       if (isLoaded) {
         setClicked(true);
@@ -27,6 +31,7 @@ const Loading = ({ percent }: { percent: number }) => {
           if (module.initialFX) {
             module.initialFX();
           }
+          console.log("Setting isLoading to false");
           setIsLoading(false);
         }, 900);
       }
@@ -46,7 +51,7 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          AM
+          KB
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
@@ -62,8 +67,8 @@ const Loading = ({ percent }: { percent: number }) => {
       <div className="loading-screen">
         <div className="loading-marquee">
           <Marquee>
-            <span> Full Stack Developer</span> <span>Software Engineer</span>
-            <span> Full Stack Developer</span> <span>Software Engineer</span>
+            <span> Data Science Student</span> <span>ML Enthusiast</span>
+            <span> Data Science Student</span> <span>ML Enthusiast</span>
           </Marquee>
         </div>
         <div

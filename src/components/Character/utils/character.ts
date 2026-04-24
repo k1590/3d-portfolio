@@ -36,7 +36,7 @@ const setCharacter = (
                 if (mesh.material) {
                   if (mesh.name === "BODY.SHIRT") { // The shirt mesh
                     const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
-                    newMat.color = new THREE.Color("#8B4513");
+                    newMat.color = new THREE.Color("#1e3a8a");
                     mesh.material = newMat;
                   } else if (mesh.name === "Pant") {
                     const newMat = (mesh.material as THREE.Material).clone() as THREE.MeshStandardMaterial;
@@ -53,10 +53,11 @@ const setCharacter = (
             resolve(gltf);
             setCharTimeline(character, camera);
             setAllTimeline();
-            character!.getObjectByName("footR")!.position.y = 3.36;
-            character!.getObjectByName("footL")!.position.y = 3.36;
 
-            // Monitor scale is handled by GsapScroll.ts animations
+            const footR = character.getObjectByName("footR");
+            const footL = character.getObjectByName("footL");
+            if (footR) footR.position.y = 3.36;
+            if (footL) footL.position.y = 3.36;
 
             dracoLoader.dispose();
           },
