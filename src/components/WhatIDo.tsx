@@ -106,44 +106,7 @@ const WhatIDo = () => {
               <div className="what-arrow"></div>
             </div>
           </div>
-          <div
-            className="what-content what-noTouch"
-            ref={(el) => setRef(el, 1)}
-          >
-            <div className="what-border1">
-              <svg height="100%">
-                <line
-                  x1="0"
-                  y1="100%"
-                  x2="100%"
-                  y2="100%"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeDasharray="6,6"
-                />
-              </svg>
-            </div>
-            <div className="what-corner"></div>
-            <div className="what-content-in">
-              <h3>ANOMALY DETECTION</h3>
-              <h4>User Behavior & Privacy-Preserving Models</h4>
-              <p>
-                Building anomaly detection systems to identify unusual user
-                behavior patterns while preserving privacy through secure
-                model design.
-              </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">Machine Learning</div>
-                <div className="what-tags">Anomaly Detection</div>
-                <div className="what-tags">Privacy-Preserving</div>
-                <div className="what-tags">Scikit-learn</div>
-                <div className="what-tags">Pandas</div>
-                <div className="what-tags">Data Analysis</div>
-              </div>
-              <div className="what-arrow"></div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
