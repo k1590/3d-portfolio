@@ -25,6 +25,13 @@ const projects = [
     image: "/images/finance_tracker.png",
     link: "",
   },
+  {
+    title: "Financial Operations Analytics",
+    category: "Revenue Forecasting & Customer Churn Prediction",
+    tools: "Time Series (ARIMA/Prophet), ML Classification, RFM Segmentation, Cohort Analysis, Python",
+    image: "/images/financial_operations.png",
+    link: "https://github.com/k1590/FINANCIAL-OPERATIONS-ANALYTICS.git",
+  },
 ];
 
 const Work = () => {

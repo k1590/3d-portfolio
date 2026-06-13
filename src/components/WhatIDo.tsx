@@ -125,20 +125,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>NLP & TEXT</h3>
-              <h4>Sarcasm, Toxicity & Pattern Detection</h4>
+              <h3>ANOMALY DETECTION</h3>
+              <h4>User Behavior & Privacy-Preserving Models</h4>
               <p>
-                Developing systems to detect sarcasm, toxicity, and hidden
-                patterns in text data using natural language processing
-                techniques.
+                Building anomaly detection systems to identify unusual user
+                behavior patterns while preserving privacy through secure
+                model design.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">NLTK</div>
-                <div className="what-tags">spaCy</div>
-                <div className="what-tags">Sarcasm Detection</div>
-                <div className="what-tags">Text Classification</div>
-                <div className="what-tags">Toxicity Analysis</div>
+                <div className="what-tags">Machine Learning</div>
+                <div className="what-tags">Anomaly Detection</div>
+                <div className="what-tags">Privacy-Preserving</div>
+                <div className="what-tags">Scikit-learn</div>
+                <div className="what-tags">Pandas</div>
+                <div className="what-tags">Data Analysis</div>
               </div>
               <div className="what-arrow"></div>
             </div>
